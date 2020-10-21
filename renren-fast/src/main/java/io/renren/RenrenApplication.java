@@ -3,7 +3,7 @@
  *
  * https://www.renren.io
  *
- * 版权所有，侵权必究！
+ * 版权所有，侵权必究!!!
  */
 
 package io.renren;
