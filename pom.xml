@@ -17,5 +17,6 @@
 		<module>tongxinmall-member</module>
 		<module>tongxinmall-order</module>
 		<module>tongxinmall-product</module>
+		<module>renren-fast</module>
 	</modules>
 </project>
