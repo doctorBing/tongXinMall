@@ -53,6 +53,11 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>com.ziyin.tongxinmall</groupId>
+			<artifactId>tongxinmall-common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
 			<groupId>com.spotify</groupId>
 			<artifactId>docker-maven-plugin</artifactId>
 			<version>0.4.14</version>
