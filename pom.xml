@@ -20,5 +20,6 @@
 		<module>tongxinmall-common</module>
 		<module>renren-fast</module>
 		<module>renren-generator</module>
-	</modules>
+        <module>tongxinmall-third-party</module>
+    </modules>
 </project>

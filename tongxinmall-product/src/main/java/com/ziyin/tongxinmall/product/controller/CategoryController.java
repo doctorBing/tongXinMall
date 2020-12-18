@@ -16,6 +16,7 @@ import com.ziyin.tongxinmall.product.service.CategoryService;
 import com.ziyin.common.utils.PageUtils;
 import com.ziyin.common.utils.R;
 
+import javax.validation.Valid;
 
 
 /**
@@ -59,7 +60,7 @@ public class CategoryController {
      */
     @RequestMapping("/save")
     // @RequiresPermissions("product:category:save")
-    public R save(@RequestBody CategoryEntity category){
+    public R save(@Valid @RequestBody CategoryEntity category){
 		categoryService.save(category);
 
         return R.ok();
