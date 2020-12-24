@@ -2,8 +2,10 @@ package com.ziyin.tongxinmall.product.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.ziyin.common.utils.PageUtils;
+import com.ziyin.tongxinmall.product.entity.BrandEntity;
 import com.ziyin.tongxinmall.product.entity.CategoryBrandRelationEntity;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -22,5 +24,7 @@ public interface CategoryBrandRelationService extends IService<CategoryBrandRela
     void updateBrand(Long brandId, String name);
 
     void updateCategory(Long catId, String name);
+
+    List<BrandEntity> getBrandsByCatId(Long catId);
 }
 
