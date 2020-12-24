@@ -20,9 +20,9 @@ import com.ziyin.common.utils.R;
 /**
  * 仓库信息
  *
- * @author ziyin
- * @email ****
- * @date 2020-10-29 21:28:03
+ * @author leifengyang
+ * @email leifengyang@gmail.com
+ * @date 2019-10-08 09:59:40
  */
 @RestController
 @RequestMapping("ware/wareinfo")
@@ -34,7 +34,7 @@ public class WareInfoController {
      * 列表
      */
     @RequestMapping("/list")
-    // @RequiresPermissions("ware:wareinfo:list")
+    //@RequiresPermissions("ware:wareinfo:list")
     public R list(@RequestParam Map<String, Object> params){
         PageUtils page = wareInfoService.queryPage(params);
 
@@ -46,7 +46,7 @@ public class WareInfoController {
      * 信息
      */
     @RequestMapping("/info/{id}")
-    // @RequiresPermissions("ware:wareinfo:info")
+    //@RequiresPermissions("ware:wareinfo:info")
     public R info(@PathVariable("id") Long id){
 		WareInfoEntity wareInfo = wareInfoService.getById(id);
 
@@ -57,7 +57,7 @@ public class WareInfoController {
      * 保存
      */
     @RequestMapping("/save")
-    // @RequiresPermissions("ware:wareinfo:save")
+    //@RequiresPermissions("ware:wareinfo:save")
     public R save(@RequestBody WareInfoEntity wareInfo){
 		wareInfoService.save(wareInfo);
 
@@ -68,7 +68,7 @@ public class WareInfoController {
      * 修改
      */
     @RequestMapping("/update")
-    // @RequiresPermissions("ware:wareinfo:update")
+    //@RequiresPermissions("ware:wareinfo:update")
     public R update(@RequestBody WareInfoEntity wareInfo){
 		wareInfoService.updateById(wareInfo);
 
@@ -79,7 +79,7 @@ public class WareInfoController {
      * 删除
      */
     @RequestMapping("/delete")
-    // @RequiresPermissions("ware:wareinfo:delete")
+    //@RequiresPermissions("ware:wareinfo:delete")
     public R delete(@RequestBody Long[] ids){
 		wareInfoService.removeByIds(Arrays.asList(ids));
 
