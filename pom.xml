@@ -21,5 +21,7 @@
 		<module>renren-fast</module>
 		<module>renren-generator</module>
         <module>tongxinmall-third-party</module>
+        <module>tongxinmall-search</module>
+        <module>tongxinmall-search</module>
     </modules>
 </project>
